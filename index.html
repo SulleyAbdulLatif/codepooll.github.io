@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEPOOLL</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="darkmode.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo" href="index.html">
+            <img src="/Assets/images/logo1.png" alt="CODEPOOLL">
+            <!-- <h2>codepooll</h2> -->
+            <a href="index.html"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#tutorials">Tutorials <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <div class="languages-section">
+                            <ul class="languages">
+                                <li class="language">
+                                    <a href="/tutorials/htmlpage/introduction.html">
+                                        <i class="fab fa-html5"></i> HTML
+                                    </a>
+                                    <p>A markup language for creating web pages.</p>
+                                </li>
+                                <li class="language">
+                                    <a href="/tutorials/htmlpage/csspage/inroductiontocss.html">
+                                        <i class="fab fa-css3-alt"></i> CSS
+                                    </a>
+                                    <p>A style sheet language for designing web pages.</p>
+                                </li>
+                                <li class="language">
+                                    <a href="/tutorials/htmlpage/JavaScipt/introductiontoJS.html">
+                                        <i class="fab fa-js"></i> JavaScript
+                                    </a>
+                                    <p>A scripting language for web development.</p>
+                                </li>
+                                <li class="language">
+                                    <a href="#">
+                                        <i class="fab fa-python"></i> Python
+                                    </a>
+                                    <p>A versatile and easy-to-read programming language.</p>
+                                </li>
+                                <li class="language">
+                                    <a href="#">
+                                        <i class="fab fa-java"></i> Java
+                                    </a>
+                                    <p>An object-oriented programming language.</p>
+                                </li>
+                                <li class="language">
+                                    <a href="#">
+                                        <i class="fab fa-cuttlefish"></i> C++
+                                    </a>
+                                    <p>A powerful programming language for system software.</p>
+                                </li>
+                                <li class="language">
+                                    <a href="#">
+                                        <i class="fab fa-chrome"></i> C#
+                                    </a>
+                                    <p>A multi-paradigm programming language developed by Microsoft.</p>
+                                </li>
+                                <li class="language">
+                                    <a href="#">
+                                        <i class="fas fa-gem"></i> Ruby
+                                    </a>
+                                    <p>A dynamic, open-source programming language.</p>
+                                </li>
+                                <li class="language">
+                                    <a href="#">
+                                        <i class="fab fa-php"></i> PHP
+                                    </a>
+                                    <p>A server-side scripting language for web development.</p>
+                                </li>
+                                <li class="language">
+                                    <a href="#">
+                                        <i class="fab fa-swift"></i> Swift
+                                    </a>
+                                    <p>An intuitive and powerful programming language for iOS.</p>
+                                </li>
+                                <li class="language">
+                                    <a href="#">
+                                        <i class="fab fa-go"></i> Go
+                                    </a>
+                                    <p>An open-source programming language for building scalable software.</p>
+                                </li>
+                                <li class="language">
+                                    <a href="#">
+                                        <i class="fab fa-rust"></i> Rust
+                                    </a>
+                                    <p>A systems programming language focused on safety and performance.</p>
+                                </li>
+                                <li class="language">
+                                    <a href="#">
+                                        <i class="fab fa-react"></i> TypeScript
+                                    </a>
+                                    <p>A superset of JavaScript that adds static typing.</p>
+                                </li>
+                                <li class="language">
+                                    <a href="#">
+                                        <i class="fab fa-android"></i> Kotlin
+                                    </a>
+                                    <p>A modern programming language for Android development.</p>
+                                </li>
+                                <li class="language">
+                                    <a href="#">
+                                        View all tutorials &rArr;
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/courses/courses.html">Courses <i class="fas fa-chevron-down"></i></a>
+                    <!-- <ul class="dropdown">
+                         <li><a href="#">Free Courses</a></li>
+                         <li><a href="#">Paid Courses</a></li>
+                         <li><a href="#">Web Development</a></li>
+                         <li><a href="#">Data Science</a></li>
+                         <li><a href="#">Mobile App Development</a></li>
+                         <li><a href="#">Game Development</a></li>
+                         <li><a href="#">UI/UX Design</a></li>
+                    </ul> -->
+                </li>
+                <li><a href="http://localhost/news-portal_ci/">Blog</a></li>
+                <li><a href="#Coding Forum">Coding Forum</a></li>
+                <li><a href="#Coding Forum">Job/Interns</a></li>
+                <!-- <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li> -->
+            </ul>
+        </nav>
+
+        <div class="log-sign">
+            <li><a href="/Login and Signup Form Design/index.html">Login</a></li>
+            <li><a href="/Login and Signup Form Design/index.html">Signup</a></li>
+            <button class="mode-button" onclick="toggleDarkMode()">
+          <i class="fas fa-sun"></i><i class="fas fa-moon"></i>
+        </button>
+        </div>
+        <div class="nav-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="close-icon">
+            <i class="fas fa-times"></i>
+        </div>
+    </header>
+
+    <!-- Tutorial Header -->
+<div class="tutorial-header">
+    <ul>
+        <li><a href="/tutorials/htmlpage/introduction.html">HTML</a></li>
+        <li><a href="/tutorials/htmlpage/csspage/inroductiontocss.html">CSS</a></li>
+        <li><a href="/tutorials/htmlpage/JavaScipt/introductiontoJS.html">JavaScript</a></li>
+        <li><a href="/tutorials/htmlpage/Pythonn/GettingStarted.html">Python</a></li>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">C++</a></li>
+        <li><a href="#">C#</a></li>
+        <li><a href="#">Ruby</a></li>
+        <li><a href="#">PHP</a></li>
+        <li><a href="#">Swift</a></li>
+        <li><a href="#">Kotlin</a></li>
+        <li><a href="#">TypeScript</a></li>
+        <li><a href="#">Go</a></li>
+        <!-- <li><a href="#">Rust</a></li>
+        <li><a href="#">Rust</a></li>
+        <li><a href="#">Rust</a></li>
+        <li><a href="#">Rust</a></li> -->
+    </ul>
+</div>
+    
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to CODEPOOLL</h1>
+            <p>Unleash Your Coding Potential – Learn, Connect, and Thrive in the World of Programming!</p>
+
+            <div class="search-area">
+                <input type="text" placeholder="Search for tutorials, e.g. Python ">
+                <button type="submit">Search</button>
+            </div>
+
+            <a href="/Login and Signup Form Design/index.html" class="cta-button" id="join-button">Join Community</a>
+        </div>
+
+        <!-- <div class="icon-container">
+            <div class="icon">
+              <img src="/Assets/images/window.svg" alt="Learn Icon">
+              <div class="icon-text">Learn</div>
+            </div>
+            <div class="icon">
+              <img src="/Assets/images/chat.svg" alt="Connect Icon">
+              <div class="icon-text">Connect with Community</div>
+            </div>
+            <div class="icon">
+              <img src="/Assets/images/upload.svg" alt="Share Icon">
+              <div class="icon-text">Share Your Knowledge</div>
+            </div>
+            <div class="icon">
+              <img src="/Assets/images/window.svg" alt="Win Icon">
+              <div class="icon-text">Win Challenges</div>
+            </div>
+          </div> -->
+          <div class="icon-container">
+            <div class="icon">
+              <i class="fas fa-graduation-cap fa-3x"></i>
+              <div class="icon-text">Learn</div>
+            </div>
+            <div class="icon">
+              <i class="fas fa-comments fa-3x"></i>
+              <div class="icon-text">Connect with Community</div>
+            </div>
+            <div class="icon">
+              <i class="fas fa-upload fa-3x"></i>
+              <div class="icon-text">Share Your Knowledge</div>
+            </div>
+            <div class="icon">
+              <i class="fas fa-trophy fa-3x"></i>
+              <div class="icon-text">Win Challenges</div>
+            </div>
+          </div>
+    </section>
+          
+          
+        <div class="horizontal-line"></div>
+
+        <div class="tutorial-section">
+            <div class="container">
+                <div>
+                    <h2 class="title">Learn programming for Free</h2>
+                    <p class="subtitle">Embark on a coding adventure with our diverse selection of programming languages and unlock endless possibilities in the world of technology!</p>
+                </div>
+                <img src="https://img.freepik.com/free-vector/coding-workshop-concept-illustration_114360-8192.jpg?size=626&ext=jpg&ga=GA1.1.2110304307.1682782981&semt=sph" alt="Choose what to learn" width="">
+            </div>
+
+            <div class="encouragement-box">
+                <!-- Animated text encouraging visitors to learn programming -->
+                <div class="animation-text">
+                    <span>Unlock Your Potential</span>
+                    <span>Embark on a Coding Journey</span>
+                    <span>Discover Endless Possibilities</span>
+                </div>
+                <!-- Arrow pointing to the language buttons -->
+                <div class="arrow">
+                    <span></span>
+                </div>
+            </div>
+       
+            <!-- <h3>Select a language and begin your <br> programming adventure now!</h3> -->
+            <!-- <ul class="languages">
+                <li class="language">
+                    <a href="/tutorials/htmlpage/introduction.html">
+                        <i class="fab fa-html5"></i> HTML
+                    </a>
+                </li>
+                <li class="language">
+                    <a href="/tutorials/htmlpage/csspage/inroductiontocss.html">
+                        <i class="fab fa-css3-alt"></i> CSS
+                    </a>
+                </li>
+                <li class="language">
+                    <a href="/t     utorials/htmlpage/JavaScipt/introductiontoJS.html">
+                        <i class="fab fa-js"></i> JavaScript
+                    </a>
+                </li>
+                <li class="language">
+                    <a href="#">
+                        <i class="fab fa-python"></i> Python
+                    </a>
+                </li>
+                <li class="language">
+                    <a href="#">
+                        <i class="fab fa-java"></i> Java
+                    </a>
+                </li>
+                <li class="language">
+                    <a href="#">
+                        <i class="fab fa-cuttlefish"></i> C++
+                    </a>
+                </li>
+                <li class="language">
+                    <a href="#">
+                        <i class="fab fa-chrome"></i> C#
+                    </a>
+                </li>
+                <li class="language">
+                    <a href="#">
+                        <i class="fas fa-gem"></i> Ruby
+                    </a>
+                </li>
+                <li class="language">
+                    <a href="#">
+                        <i class="fab fa-php"></i> PHP
+                    </a>
+                </li>
+                <li class="language">
+                    <a href="#">
+                        <i class="fab fa-swift"></i> Swift
+                    </a>
+                </li>
+                <li class="language">
+                    <a href="#">
+                        <i class="fab fa-go"></i> Go
+                    </a>
+                </li>
+                <li class="language">
+                    <a href="#">
+                        <i class="fab fa-rust"></i> Rust
+                    </a>
+                </li>
+                <li class="language">
+                    <a href="#">
+                        <i class="fab fa-react"></i> TypeScript
+                    </a>
+                </li>
+                <li class="language">
+                    <a href="#">
+                        <i class="fab fa-android"></i> Kotlin
+                    </a>
+                </li>
+                <li class="language">
+                    <a href="#">
+                         View all tutorials &rArr;
+                    </a>
+                </li>
+            </ul> -->
+
+        </div>
+        </div>
+        <div class="languages-section">
+            <ul class="languages">
+                <li class="language">
+                    <a href="/tutorials/htmlpage/introduction.html">
+                        <i class="fab fa-html5"></i> HTML
+                    </a>
+                    <p>A markup language for creating web pages.</p>
+                </li>
+                <li class="language">
+                    <a href="/tutorials/htmlpage/csspage/inroductiontocss.html">
+                        <i class="fab fa-css3-alt"></i> CSS
+                    </a>
+                    <p>A style sheet language for designing web pages.</p>
+                </li>
+                <li class="language">
+                    <a href="/tutorials/htmlpage/JavaScipt/introductiontoJS.html">
+                        <i class="fab fa-js"></i> JavaScript
+                    </a>
+                    <p>A scripting language for web development.</p>
+                </li>
+                <li class="language">
+                    <a href="#">
+                        <i class="fab fa-python"></i> Python
+                    </a>
+                    <p>A versatile and easy-to-read programming language.</p>
+                </li>
+                <li class="language">
+                    <a href="#">
+                        <i class="fab fa-java"></i> Java
+                    </a>
+                    <p>An object-oriented programming language.</p>
+                </li>
+                <li class="language">
+                    <a href="#">
+                        <i class="fab fa-cuttlefish"></i> C++
+                    </a>
+                    <p>A powerful programming language for system software.</p>
+                </li>
+                <li class="language">
+                    <a href="#">
+                        <i class="fab fa-chrome"></i> C#
+                    </a>
+                    <p>A multi-paradigm programming language developed by Microsoft.</p>
+                </li>
+                <li class="language">
+                    <a href="#">
+                        <i class="fas fa-gem"></i> Ruby
+                    </a>
+                    <p>A dynamic, open-source programming language.</p>
+                </li>
+                <li class="language">
+                    <a href="#">
+                        <i class="fab fa-php"></i> PHP
+                    </a>
+                    <p>A server-side scripting language for web development.</p>
+                </li>
+                <li class="language">
+                    <a href="#">
+                        <i class="fab fa-swift"></i> Swift
+                    </a>
+                    <p>An intuitive and powerful programming language for iOS.</p>
+                </li>
+                <li class="language">
+                    <a href="#">
+                        <i class="fab fa-go"></i> Go
+                    </a>
+                    <p>An open-source programming language for building scalable software.</p>
+                </li>
+                <li class="language">
+                    <a href="#">
+                        <i class="fab fa-rust"></i> Rust
+                    </a>
+                    <p>A systems programming language focused on safety and performance.</p>
+                </li>
+                <li class="language">
+                    <a href="#">
+                        <i class="fab fa-react"></i> TypeScript
+                    </a>
+                    <p>A superset of JavaScript that adds static typing.</p>
+                </li>
+                <li class="language">
+                    <a href="#">
+                        <i class="fab fa-android"></i> Kotlin
+                    </a>
+                    <p>A modern programming language for Android development.</p>
+                </li>
+                <li class="language">
+                    <a href="#">
+                        View all tutorials &rArr;
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <!--Interviewb section-->
+        <div class="interview-prep-section">
+            <h2 class="section-title">Interview Preparation for Developers</h2>
+            <p class="section-description">Get ready for your tech job interviews with our comprehensive resources.</p>
+            <div class="topic-cards">
+              <div class="topic-card">
+                <h3 class="topic-title">Algorithm and Data Structures</h3>
+                <p class="topic-description">Master the fundamentals of algorithms and data structures.</p>
+                <a href="#" class="learn-more-button">Learn More</a>
+              </div>
+              <div class="topic-card">
+                <h3 class="topic-title">System Design</h3>
+                <p class="topic-description">Learn how to design scalable and efficient systems.</p>
+                <a href="#" class="learn-more-button">Learn More</a>
+              </div>
+              <div class="topic-card">
+                <h3 class="topic-title">Behavioral Questions</h3>
+                <p class="topic-description">Prepare for behavioral and situational interview questions.</p>
+                <a href="#" class="learn-more-button">Learn More</a>
+              </div>
+              <div class="topic-card">
+                <h3 class="topic-title">Mock Interviews</h3>
+                <p class="topic-description">Practice with mock interviews and receive valuable feedback.</p>
+                <a href="#" class="learn-more-button">Learn More</a>
+              </div>
+              <!-- Add more topic cards as needed -->
+            </div>
+          </div>
+        <!--Interview section end-->
+
+        <!--jobs section-->
+       <div class="jobs">
+        <section class="latest-jobs">
+            <h2>Latest Jobs</h2>
+            <div class="job-listings">
+                <!-- Job listing items will be added dynamically using JavaScript -->
+            </div>
+            <a href="/jobs" class="view-all-jobs">View All Jobs</a>
+        </section>
+       </div>
+        <!--jobs section end-->
+
+        <div class="forum">
+            <section class="coding-forum">
+                <h2>Coding Forum</h2>
+                <div class="forum-threads">
+                    <!-- Forum threads will be added dynamically using JavaScript -->
+                </div>
+                <a href="/forum" class="view-all-threads">View All Threads</a>
+            </section>
+        </div>
+
+        <!--blog section-->
+        <div class="blog">
+            <section class="blog-section">
+                <h2>Latest Blog Posts</h2>
+                <div class="blog-posts">
+                    <!-- Blog post items will be added dynamically using JavaScript -->
+                </div>
+                <a href="/blog" class="view-all-posts">View All Posts</a>
+            </section>
+        </div>
+        <!--end of blog section-->
+
+        <div class="discussion-forum">
+            <div class="discussion-forum-content">
+              <h1 class="forum-title">Join the Community</h1>
+              <p class="forum-description">Connect with other programmers</p>
+              <a href="#" class="join-button">Join for Free</a>
+            </div>
+        </div>
+  
+        <section class="statistics-section">
+            <div class="section-title">Statistics</div>
+            <div class="statistics-container">
+                <div class="statistics-card">
+                    <h3>Popular Programming Languages</h3>
+                    <div class="bar-chart">
+                        <canvas id="languagesChart"></canvas>
+                    </div>
+                </div>
+                <div class="statistics-card">
+                    <h3>Companies Using Them</h3>
+                    <div class="bar-chart">
+                        <canvas id="companiesChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories or Topics -->
+        <section id="courses" class="categories-section">
+            <h2 class="section-title">Are you a beginner who don't know where to start? Check the Tutorials below</h2>
+            <div class="tutorial-card">
+                <img src="/tutorials pages/images/front end1.png" alt="Tutorial 1">
+                <h3>Become a Front-end developer</h3>
+                <p>It's not hard as you think.WIth consistency, hardwork and time management, you can land a job between 3 to 6 months.</p>
+                <a href="#" class="read-more">Start Now</a>
+                <div class="popup-overlay">
+                    <div class="popup-content">
+                        <button class="close-button">&times;</button>
+                        <h3>Tutorial 1</h3>
+                        <p>Content of tutorial 1.</p>
+                        <h4>Front-end Languages and Frameworks</h4>
+                        <div class="language-cards">
+                            <div class="language-card">
+                                <button class="language-button">HTML</button>
+                                <p>HTML is the standard markup language for creating web pages and web applications.</p>
+                            </div>
+                            <div class="language-card">
+                                <button class="language-button">CSS</button>
+                                <p>CSS is used for styling web pages and controlling their presentation.</p>
+                            </div>
+                            <div class="language-card">
+                                <button class="language-button">JavaScript</button>
+                                <p>JavaScript is a programming language that adds interactivity and dynamic features to websites.</p>
+                            </div>
+                            <div class="language-card">
+                                <button class="language-button">Bootstrap</button>
+                                <p>Bootstrap is a CSS framework for designing better web pages.</p>
+                            </div>
+                            <div class="language-card">
+                                <button class="language-button">Bootstrap</button>
+                                <p>Bootstrap is a CSS framework for designing better web pages.</p>
+                            </div>
+                            <div class="language-card">
+                                <button class="language-button">Bootstrap</button>
+                                <p>Bootstrap is a CSS framework for designing better web pages.</p>
+                            </div>
+                            <!-- Add more language cards as needed -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tutorial-card">
+                <img src="/tutorials pages/images/back end2.jpeg" alt="Tutorial 2">
+                <h3>Become a Back-end Developer</h3>
+                <p>Description of tutorial 2.</p>
+                <a href="#" class="read-more">Start Now</a>
+                <div class="popup-overlay">
+                    <div class="popup-content">
+                        <button class="close-button">&times;</button>
+                        <h3>Tutorial 1</h3>
+                        <p>Content of tutorial 1.</p>
+                        <h4>Front-end Languages and Frameworks</h4>
+                        <div class="language-cards">
+                            <div class="language-card">
+                                <button class="language-button">HTML</button>
+                                <p>HTML is the standard markup language for creating web pages and web applications.</p>
+                            </div>
+                            <div class="language-card">
+                                <button class="language-button">CSS</button>
+                                <p>CSS is used for styling web pages and controlling their presentation.</p>
+                            </div>
+                            <div class="language-card">
+                                <button class="language-button">JavaScript</button>
+                                <p>JavaScript is a programming language that adds interactivity and dynamic features to websites.</p>
+                            </div>
+                            <div class="language-card">
+                                <button class="language-button">Bootstrap</button>
+                                <p>Bootstrap is a CSS framework for designing better web pages.</p>
+                            </div>
+                            <div class="language-card">
+                                <button class="language-button">Bootstrap</button>
+                                <p>Bootstrap is a CSS framework for designing better web pages.</p>
+                            </div>
+                            <div class="language-card">
+                                <button class="language-button">Bootstrap</button>
+                                <p>Bootstrap is a CSS framework for designing better web pages.</p>
+                            </div>
+                            <!-- Add more language cards as needed -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Featured Tutorials/Courses -->
+        <section id="tutorials" class="featured-section">
+            <!-- <h2 class="section-title">Featured Tutorials</h2> -->
+            <div class="tutorial-card">
+                <img src="tutorial1.jpg" alt="Tutorial 1">
+                <h3>Tutorial 1</h3>
+                <p>Description of tutorial 1.</p>
+                <a href="#" class="read-more">Read More</a>
+                <div class="popup-overlay">
+                    <div class="popup-content">
+                        <button class="close-button">&times;</button>
+                        <h3>Tutorial 1</h3>
+                        <p>Content of tutorial 1.</p>
+                        <a href="tutorial1.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tutorial-card">
+                <img src="tutorial2.jpg" alt="Tutorial 2">
+                <h3>Tutorial 2</h3>
+                <p>Description of tutorial 2.</p>
+                <a href="#" class="read-more">Read More</a>
+                <div class="popup-overlay">
+                    <div class="popup-content">
+                        <button class="close-button">&times;</button>
+                        <h3>Tutorial 2</h3>
+                        <p>Content of tutorial 2.</p>
+                        <a href="tutorial2.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories or Topics -->
+        <section id="courses" class="categories-section">
+            <!-- <h2 class="section-title">Categories</h2> -->
+            <div class="tutorial-card">
+                <img src="tutorial1.jpg" alt="Tutorial 1">
+                <h3>Tutorial 1</h3>
+                <p>Description of tutorial 1.</p>
+                <a href="#" class="read-more">Read More</a>
+                <div class="popup-overlay">
+                    <div class="popup-content">
+                        <button class="close-button">&times;</button>
+                        <h3>Tutorial 1</h3>
+                        <p>Content of tutorial 1.</p>
+                        <a href="tutorial1.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tutorial-card">
+                <img src="tutorial2.jpg" alt="Tutorial 2">
+                <h3>Tutorial 2</h3>
+                <p>Description of tutorial 2.</p>
+                <a href="#" class="read-more">Read More</a>
+                <div class="popup-overlay">
+                    <div class="popup-content">
+                        <button class="close-button">&times;</button>
+                        <h3>Tutorial 2</h3>
+                        <p>Content of tutorial 2.</p>
+                        <a href="tutorial2.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Tutorials/Courses -->
+        <section id="tutorials" class="featured-section">
+            <!-- <h2 class="section-title">Featured Tutorials</h2> -->
+            <div class="tutorial-card">
+                <img src="tutorial1.jpg" alt="Tutorial 1">
+                <h3>Tutorial 1</h3>
+                <p>Description of tutorial 1.</p>
+                <a href="#" class="read-more">Read More</a>
+                <div class="popup-overlay">
+                    <div class="popup-content">
+                        <button class="close-button">&times;</button>
+                        <h3>Tutorial 1</h3>
+                        <p>Content of tutorial 1.</p>
+                        <a href="tutorial1.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tutorial-card">
+                <img src="tutorial2.jpg" alt="Tutorial 2">
+                <h3>Tutorial 2</h3>
+                <p>Description of tutorial 2.</p>
+                <a href="#" class="read-more">Read More</a>
+                <div class="popup-overlay">
+                    <div class="popup-content">
+                        <button class="close-button">&times;</button>
+                        <h3>Tutorial 2</h3>
+                        <p>Content of tutorial 2.</p>
+                        <a href="tutorial2.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories or Topics -->
+        <section id="courses" class="categories-section">
+            <h2 class="section-title">Categories</h2>
+            <div class="tutorial-card">
+                <img src="tutorial1.jpg" alt="Tutorial 1">
+                <h3>Tutorial 1</h3>
+                <p>Description of tutorial 1.</p>
+                <a href="#" class="read-more">Read More</a>
+                <div class="popup-overlay">
+                    <div class="popup-content">
+                        <button class="close-button">&times;</button>
+                        <h3>Tutorial 1</h3>
+                        <p>Content of tutorial 1.</p>
+                        <a href="tutorial1.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tutorial-card">
+                <img src="tutorial2.jpg" alt="Tutorial 2">
+                <h3>Tutorial 2</h3>
+                <p>Description of tutorial 2.</p>
+                <a href="#" class="read-more">Read More</a>
+                <div class="popup-overlay">
+                    <div class="popup-content">
+                        <button class="close-button">&times;</button>
+                        <h3>Tutorial 2</h3>
+                        <p>Content of tutorial 2.</p>
+                        <a href="tutorial2.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials-section">
+            <h2 class="section-title">Testimonials</h2>
+            <div class="testimonial">
+                <img src="user1.jpg" alt="User 1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus, sapien id tempor auctor.</p>
+                <p class="user-info">- User 1</p>
+            </div>
+            <div class="testimonial">
+                <img src="user2.jpg" alt="User 2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus, sapien id tempor auctor.</p>
+                <p class="user-info">- User 2</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <h2 class="section-title">About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus, sapien id tempor auctor, nunc velit accumsan lorem, non malesuada lectus turpis et enim.</p>
+            <p>Nulla facilisi. Suspendisse non lectus ut enim tempor efficitur. Phasellus vitae erat sed ante commodo condimentum.</p>
+        </section>
+
+        <!-- Call-to-Action -->
+        <section class="cta-section">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Learn, Connect, and Thrive in the World of Programming!.</p>
+            <a href="./Login and Signup Form Design/index.html" class="cta-button">Sign Up</a>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram.png" alt="Instagram"></a>
+            </div>
+            <p>&copy; 2023 CODEPOOLL. All rights reserved.</p>
+        </footer>
+        <script>
+            // Chart data for programming languages
+            var languagesData = {
+                labels: ['JavaScript', 'Python', 'Java', 'C++', 'Ruby'],
+                datasets: [{
+                    label: 'Usage Count',
+                    data: [80, 70, 60, 50, 40],
+                    backgroundColor: 'rgba(75, 192, 192, 0.8)' // Customize the bar color
+                }]
+            };
+
+            // Chart data for popular companies
+            var companiesData = {
+                labels: ['Google', 'Microsoft', 'Facebook', 'Amazon', 'Netflix'],
+                datasets: [{
+                    label: 'Usage Count',
+                    data: [90, 85, 75, 70, 65],
+                    backgroundColor: 'rgba(54, 162, 235, 0.8)' // Customize the bar color
+                }]
+            };
+
+            // Initialize the language chart
+            var languagesChart = new Chart(document.getElementById('languagesChart'), {
+                type: 'bar',
+                data: languagesData,
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+
+            // Initialize the companies chart
+            var companiesChart = new Chart(document.getElementById('companiesChart'), {
+                type: 'bar',
+                data: companiesData,
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        </script>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var tutorialCards = document.querySelectorAll(".tutorial-card");
+        var categoryCards = document.querySelectorAll(".category-card");
+
+        function showPopup(card) {
+            var popupOverlay = card.querySelector(".popup-overlay");
+            popupOverlay.style.display = "block";
+        }
+
+        function hidePopup(card) {
+            var popupOverlay = card.querySelector(".popup-overlay");
+            popupOverlay.style.display = "none";
+        }
+
+        tutorialCards.forEach(function(card) {
+            var readMoreButton = card.querySelector(".read-more");
+            var closeButton = card.querySelector(".close-button");
+
+            readMoreButton.addEventListener("click", function(event) {
+                event.preventDefault();
+                showPopup(card);
+            });
+
+            closeButton.addEventListener("click", function() {
+                hidePopup(card);
+            });
+        });
+
+        categoryCards.forEach(function(card) {
+            var closeButton = card.querySelector(".close-button");
+
+            card.addEventListener("click", function() {
+                showPopup(card);
+            });
+
+            closeButton.addEventListener("click", function() {
+                hidePopup(card);
+            });
+        });
+    });
+
+    // //dark mode
+    // // JavaScript code to toggle dark mode
+    // function toggleDarkMode() {
+    //     document.body.classList.toggle('dark-mode');
+    //     const modeButton = document.querySelector('.mode-button');
+    //     modeButton.classList.toggle('dark-mode');
+    // }
+
+    // jQuery script to handle the navigation icon and close icon clicks
+    $(document).ready(function() {
+        $(".nav-icon").click(function() {
+            $(this).toggleClass("active");
+        });
+
+        $(".close-icon").click(function() {
+            $(".nav-icon").removeClass("active");
+        });
+    });
+
+  // This is a simplified example using dummy data
+const jobListings = [
+    { title: 'Web Developer', company: 'TechCo', location: 'Remote' },
+    { title: 'Software Engineer', company: 'CodeTech', location: 'San Francisco' },
+    { title: 'Frontend Developer', company: 'WebSolutions', location: 'New York' }
+];
+
+const jobListingsContainer = document.querySelector('.job-listings');
+
+jobListings.forEach(job => {
+    const jobListingItem = document.createElement('div');
+    jobListingItem.classList.add('job-listing');
+    
+    jobListingItem.innerHTML = `
+        <h3>${job.title}</h3>
+        <p>Company: ${job.company}</p>
+        <p>Location: ${job.location}</p>
+    `;
+    
+    jobListingsContainer.appendChild(jobListingItem);
+});
+
+
+// This is a simplified example using dummy data
+const forumThreads = [
+    { title: 'Getting Started with JavaScript', author: 'Mr.Logic', replies: 10 },
+    { title: 'Best Practices for CSS Flexbox', author: 'Coder456', replies: 8 },
+    { title: 'Troubleshooting Python Errors', author: 'DevGuru', replies: 15 }
+];
+
+const forumThreadsContainer = document.querySelector('.forum-threads');
+
+forumThreads.forEach(thread => {
+    const forumThreadItem = document.createElement('div');
+    forumThreadItem.classList.add('forum-thread');
+    
+    forumThreadItem.innerHTML = `
+        <h3>${thread.title}</h3>
+        <p><strong>Author:</strong> ${thread.author}</p>
+        <p><strong>Replies:</strong> ${thread.replies}</p>
+    `;
+    
+    forumThreadsContainer.appendChild(forumThreadItem);
+});
+
+//blog post
+// This is a simplified example using dummy data
+const blogPosts = [
+    { title: '10 Tips for Mastering Python', author: 'CodeNinja', date: 'August 5, 2023' },
+    { title: 'Introduction to Web Development', author: 'WebWizard', date: 'July 28, 2023' },
+    { title: 'JavaScript Frameworks Comparison', author: 'JSPro', date: 'July 15, 2023' }
+];
+
+const blogPostsContainer = document.querySelector('.blog-posts');
+
+blogPosts.forEach(post => {
+    const blogPostItem = document.createElement('div');
+    blogPostItem.classList.add('blog-post');
+    
+    blogPostItem.innerHTML = `
+        <h3>${post.title}</h3>
+        <p><strong>Author:</strong> ${post.author}</p>
+        <p><strong>Date:</strong> ${post.date}</p>
+    `;
+    
+    blogPostsContainer.appendChild(blogPostItem);
+});
+
+// // Function to add the 'emphasized' class to the button
+// function emphasizeButton() {
+//     const button = document.getElementById("join-button");
+//     button.classList.add("emphasized");
+    
+//     // Remove the 'emphasized' class after 1 second
+//     setTimeout(() => {
+//         button.classList.remove("emphasized");
+//     }, 1000);
+// }
+
+// // Call the emphasizeButton function every 20 seconds
+// setInterval(emphasizeButton, 20000);
+
+
+
+</script>
