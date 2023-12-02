@@ -1508,7 +1508,7 @@ footer p {
         grid-template-columns: 1fr;
         column-gap: 10%;
     }
-    .sign-log li {
+    .log-sign li {
         display: none;
     }
 
