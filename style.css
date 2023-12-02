@@ -1418,4 +1418,100 @@ footer p {
     }
 }
 
+/* Styles for screens up to 768px */
+@media screen and (max-width: 768px) {
+    .nav-icon {
+        display: block;
+        padding-right: 20px;
+    }
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        background-color: #333;
+        padding: 10px;
+        width: 100%;
+        z-index: 1;
+    }
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .close-icon {
+        display: none;
+    }
+    /* Show the navigation when the icon is clicked */
+    .nav-icon.active~nav ul {
+        display: block;
+    }
+    /* Show the close icon when the navigation is open */
+    .nav-icon.active~.close-icon {
+        display: block;
+    }
+
+    .log-sign li a {
+        font-size: 12px;
+    }
+
+    .tutorial-header {
+        max-height: 100px; /* Increase max-height for smaller screens */
+    }
+
+    .hero-content {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
+
+/* Additional styles for screens up to 600px */
+@media screen and (max-width: 600px) {
+    .container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container img {
+        height: auto; /* Adjust height to auto for better responsiveness */
+        width: 100%;
+    }
+
+    .container > div {
+        flex: 1 0 auto;
+        width: 100%;
+    }
+
+    .category-card {
+        grid-template-columns: 1fr;
+        column-gap: 10%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+}
+
+/* Styles for screens up to 320px */
+@media screen and (max-width: 320px) {
+    /* Add specific styles for screens with a width of 320px or less */
+    /* Adjust as needed for optimal display on smaller screens */
+}
+
+
 
