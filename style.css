@@ -1467,6 +1467,7 @@ footer p {
 
     .log-sign li a {
         font-size: 12px;
+        display: none;
     }
 
     .tutorial-header {
