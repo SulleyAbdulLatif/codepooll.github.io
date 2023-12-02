@@ -1508,6 +1508,9 @@ footer p {
         grid-template-columns: 1fr;
         column-gap: 10%;
     }
+    .sign-log li {
+        display: none;
+    }
 
     h1 {
         font-size: 28px;
