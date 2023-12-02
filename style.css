@@ -1465,10 +1465,10 @@ footer p {
         display: block;
     }
 
-    .log-sign li a {
+/*     .log-sign li a {
         font-size: 12px;
         display: none;
-    }
+    } */
 
     .tutorial-header {
         max-height: 100px; /* Increase max-height for smaller screens */
@@ -1509,7 +1509,7 @@ footer p {
         grid-template-columns: 1fr;
         column-gap: 10%;
     }
-    .log-sign li {
+    .log-sign  {
         display: none;
     }
 
