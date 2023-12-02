@@ -1340,7 +1340,22 @@ footer p {
 .search-area button:hover {
     background-color: #2e1cb4;
 }
+@media screen and (max-width: 768px) {
+    .search-area {
+        max-width: 100%; /* Use the full width of the container */
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+        margin-bottom: 20px; /* Adjust margin for smaller screens */
+    }
 
+    .search-area input[type="text"] {
+        font-size: 14px; /* Decrease font size for smaller screens */
+    }
+
+    .search-area button {
+        padding: 8px 10px; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Decrease font size for smaller screens */
+    }
+}
 
 /* Styling for the statistics section */
 
