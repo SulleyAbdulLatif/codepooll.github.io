@@ -605,6 +605,31 @@ body.dark-mode {
 .language .fas {
     color: #6610f2;
 }
+
+@media screen and (max-width: 768px) {
+    .language {
+        text-align: center; /* Center-align the content on smaller screens */
+        padding: 15px; /* Increase padding for better spacing on smaller screens */
+    }
+
+    .language p {
+        display: none; /* Hide the paragraph text on smaller screens */
+    }
+
+    .language a {
+        font-size: 18px; /* Increase font size for better visibility on smaller screens */
+    }
+
+    .language a::after {
+        content: "Learn Now"; /* Add "Learn Now" text after the anchor link */
+        display: block;
+        background-color: #674bd8; /* Button background color */
+        color: #ffffff; /* Button text color */
+        padding: 8px 15px; /* Button padding */
+        border-radius: 20px; /* Button border-radius */
+        margin-top: 10px; /* Add space between the link and the button */
+    }
+}
 /*languages*/
  
 .tutorial-section {
