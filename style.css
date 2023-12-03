@@ -614,7 +614,7 @@ body.dark-mode {
     }
 
     .language p {
-        display: none; /* Hide the paragraph text on smaller screens */
+/*         display: none; /* Hide the paragraph text on smaller screens */ */
     }
 
     .language a {
