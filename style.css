@@ -610,11 +610,13 @@ body.dark-mode {
     .language {
         text-align: center; /* Center-align the content on smaller screens */
         padding: 15px; /* Increase padding for better spacing on smaller screens */
+        width: 100%; /* Set width to 100% to fit the edges of the screen */
         max-width: none; /* Remove max-width if it's set */
     }
 
     .language p {
-/*         display: none; /* Hide the paragraph text on smaller screens */ */
+        /* Remove display: none; to display the paragraph text on smaller screens */
+        margin-bottom: 10px; /* Add margin below the paragraph for spacing */
     }
 
     .language a {
